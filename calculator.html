@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/project/calculator/calculator.css">
+  <script src="/project/calculator/calculator.js" defer></script>
+</head>
+<body>
+  <div id="container">
+ <form name="calc">
+  <input type="text" name="answer" id="output">
+  <div class="i" id="a1">
+    <input type="button" value="1" id="button" onmouseover="big()" onmouseout="small()" onclick="calc.answer.value+='1'">
+    <input type="button" value="2"  onclick="calc.answer.value+='2'">
+    <input type="button" value="3"  onclick="calc.answer.value+='3'">
+    <input type="button" value="+"  onclick="calc.answer.value+='+'">
+  </div>
+  <div  class="i">
+    <input type="button" value="4" onclick="calc.answer.value+='4'">
+    <input type="button" value="5" onclick="calc.answer.value+='5'">
+    <input type="button" value="6" onclick="calc.answer.value+='6'">
+    <input type="button" value="-" onclick="calc.answer.value+='-'">
+  </div>
+  <div  class="i">
+    <input type="button" value="7" onclick="calc.answer.value+='7'">
+    <input type="button" value="8" onclick="calc.answer.value+='8'">
+    <input type="button" value="9" onclick="calc.answer.value+='9'">
+    <input type="button" value="*" onclick="calc.answer.value+='*'">
+  </div>
+  <div  class="i">
+    <input type="button" value="." onclick="calc.answer.value+='.'">
+    <input type="button" value="0" onclick="calc.answer.value+='0'">
+    <input type="button" value="/" onclick="calc.answer.value+='/'">
+    <input type="button" value="%" onclick="calc.answer.value+='%'">
+  </div>
+  <div  class="i">
+    <input type="button" id="last1" value="clear" onclick="calc.answer.value=''">
+    <input type="button" id="last1" value="=" onclick="calc.answer.value=eval(calc.answer.value)">
+  </div>
+ </form>
+</div>
+</body>
+</html>
